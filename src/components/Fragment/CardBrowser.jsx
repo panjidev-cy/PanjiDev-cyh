@@ -21,11 +21,11 @@ const CardBrowser = () => {
 
 
                     <CardTimeline>
-                        <h4>name</h4>
+                        <h4 className="font-poppins text-sm font-medium ">Name</h4>
                         <h1 className="font-Manrope text-5xl font-black capitalize text-black">Panji Bhekti Wibowo</h1>
                     </CardTimeline>
                     <CardTimeline>
-                        <h4 className="font-poppins text-sm font-medium">age, work</h4>
+                        <h4 className="font-poppins text-sm font-medium">Age, Work</h4>
                         <div className="flex gap-4 text-gray-700">
                           <h3 className="font-poppins text-base font-semibold">16 years old</h3>
                           <h3 className="font-poppins text-base font-semibold">Student</h3>
