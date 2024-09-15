@@ -188,38 +188,58 @@ function App(){
 
 
 
-      <footer className='w-full bg-gray-300'>
-
-        <div className="grid grid-cols-3 px-10 py-10 gap-10">
+      <footer className="bg-white text-gray-800 py-8">
+      <div className="container mx-auto px-4">
+        {/* Grid Layout for Proper Alignment */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* About Section */}
           <div>
-            <h1 className='font-poppins font-semibold text-sm text-gray-600 pb-2'>work</h1>
-            <ul className='font-poppins font-semibold text-sm text-gray-600 ml-3 gap-3 flex flex-col list-disc'>
-              <li><a href="#" id="">Home</a></li>
-              <li><a href="#" id="">About me</a></li>
-              <li><a href="#" id="">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h1 className='font-poppins font-semibold text-sm text-gray-600 pb-2'>work</h1>
-            <ul className='font-poppins font-semibold text-sm text-gray-600 ml-3 gap-3 flex flex-col list-disc'>
-              <li><a href="#" id="">Home</a></li>
-              <li><a href="#" id="">About me</a></li>
-              <li><a href="#" id="">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h1 className='font-poppins font-semibold text-sm text-gray-600 pb-2'>work</h1>
-            <ul className='font-poppins font-semibold text-sm text-gray-600 ml-3 gap-3 flex flex-col list-disc'>
-              <li><a href="#" id="">Home</a></li>
-              <li><a href="#" id="">About me</a></li>
-              <li><a href="#" id="">Contact</a></li>
-            </ul>
+            <h3 className="font-bold text-lg mb-2">About Me</h3>
+            <p className="text-gray-600">
+              I’m Ega, a <span className="font-semibold">full-stack engineer</span> who loves intuitive,
+              clean and modern UI design.
+            </p>
+            <a href="https://github.com" className="mt-4 inline-block">
+              {/* <FaGithub size={24} /> */}
+            </a>
           </div>
 
-          
+          {/* Work Section */}
+          <div>
+            <h3 className="font-bold text-lg mb-2">Work</h3>
+            <ul>
+              <li><a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a></li>
+              <li><a href="#experience" className="text-gray-600 hover:text-gray-900">Experience</a></li>
+              <li><a href="#skills" className="text-gray-600 hover:text-gray-900">Skills and Tools</a></li>
+              <li><a href="#studio" className="text-gray-600 hover:text-gray-900">Studio</a></li>
+            </ul>
+          </div>
+
+          {/* Learn Coding Section */}
+          <div>
+            <h3 className="font-bold text-lg mb-2">Learn coding</h3>
+            <a href="https://kopico.com" className="text-gray-600 hover:text-gray-900">Kopico &rarr;</a>
+          </div>
+
+          {/* Favorite Framework Section */}
+          <div>
+            <h3 className="font-bold text-lg mb-2">Favorite Framework</h3>
+            <ul>
+              <li><a href="https://nextjs.org" className="text-gray-600 hover:text-gray-900">Next.js &rarr;</a></li>
+              <li><a href="https://nestjs.com" className="text-gray-600 hover:text-gray-900">Nest.js &rarr;</a></li>
+            </ul>
+          </div>
         </div>
-          
-      </footer>
+
+        {/* Bottom Copyright Section */}
+        <div className="mt-8 border-t pt-4 flex flex-col md:flex-row justify-between items-center text-gray-600">
+          <p>© 2024, Ega Gofur</p>
+          <a href="https://github.com" className="text-gray-600 hover:text-gray-900">
+            see the recent update on GitHub
+          </a>
+        </div>
+      </div>
+    </footer>
       
     </div>
   )
